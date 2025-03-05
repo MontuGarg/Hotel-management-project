@@ -69,9 +69,9 @@ export default function Employee() {
                   <td>{user.salary}</td>
                   
                   <td>
-                    <Link to={`/User/${user.id}`}><i className="fa fa-eye" style={{color:"white",fontSize:"25px",marginLeft:"5%"}} ></i></Link>
-                    <Link to={`/EditUser/${user.id}`}><i className='far fa-edit' style={{color:"grey",fontSize:"25px",marginLeft:"5%"}}></i></Link>
-                    <Link onClick={()=>DeleteUser(user.id)}><i className='fas fa-trash-alt' style={{color:"red",fontSize:"25px",marginLeft:"5%"}} ></i></Link>
+                    <Link to={`/User/${user.id}`}><button className='btn btn-primary'>View</button></Link>
+                    <Link to={`/EditUser/${user.id}`}><button className='btn btn-success'>Edit</button></Link>
+                    <Link onClick={()=>DeleteUser(user.id)}><button className='btn btn-danger'>Delete</button></Link>
                   </td>
                 </tr>
               ))

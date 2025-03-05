@@ -54,9 +54,9 @@ export default function Customer() {
                   <td>{user.check}</td>
                   <td>{user.checkO}</td>
                   <td>
-                    <Link to={`/custdetail/${user.id}`}><i className="fa fa-eye" style={{color:"white",fontSize:"25px",marginLeft:"5%"}} ></i></Link>
-                    <Link to={`/editcust/${user.id}`}><i className='far fa-edit' style={{color:"grey",fontSize:"25px",marginLeft:"5%"}}></i></Link>
-                    <Link onClick={()=>DeleteUser(user.id)}><i className='fas fa-trash-alt' style={{color:"red",fontSize:"25px",marginLeft:"5%"}} ></i></Link>
+                    <Link to={`/custdetail/${user.id}`}><button className='btn btn-primary'>View</button></Link>
+                    <Link to={`/editcust/${user.id}`}><button className='btn btn-success'>Edit</button></Link>
+                    <Link onClick={()=>DeleteUser(user.id)}><button className='btn btn-danger'>Delete</button></Link>
                   </td>
                 </tr>
               ))
